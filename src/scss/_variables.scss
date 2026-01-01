@@ -1,0 +1,48 @@
+:root {
+  /* color */
+  --main-color: #202321;
+  --dark-color: #1b1d1b;
+  --steel-blue: #5b86a1;
+  --secondary-color: #f7fbfb;
+
+  /* ширини для медіа-запитів */
+  --bp-mobile: 375px;
+  --bp-tablet: 768px;
+  --bp-desktop: 1440px;
+
+  --bp-mobile-max: 374px;
+  --bp-tablet-max: 767px;
+  --bp-desktop-max: 1439px;
+
+  /* font saze */
+  --fs-1: 88px;
+  --fs-2: 68px;
+  --fs-3: 60px;
+  --fs-4: 48px;
+  --fs-5: 28px;
+  --fs-6: 24px;
+  --fs-7: 20px;
+
+  @media (max-width: 1439px) {
+    --fs-1: 68px;
+    --fs-2: 52px;
+    --fs-3: 32px;
+    --fs-4: 28px;
+    --fs-5: 24px;
+    --fs-6: 20px;
+    --fs-7: 18px;
+  }
+
+  @media (max-width: 767px) {
+    --fs-1: 40px;
+    --fs-2: 32px;
+    --fs-3: 28px;
+    --fs-4: 24px;
+    --fs-5: 20px;
+    --fs-6: 16px;
+    --fs-7: 14px;
+  }
+
+   --cubic-brauser: cubic-bezier(0.4, 0, 0.2, 1)
+}
+  

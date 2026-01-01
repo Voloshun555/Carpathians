@@ -12,6 +12,7 @@
     "vite": "^7.2.4"
   },
   "dependencies": {
+    "sass": "^1.97.1",
     "vite-plugin-handlebars": "^2.0.0"
   }
 }
