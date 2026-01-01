@@ -1,0 +1,31 @@
+.header {
+  position: relative;
+  z-index: 2;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 20px 32px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo,
+.burger-menu {
+  width: 40px;
+  height: 40px;
+  color: var(--secondary-color);
+  transition: color 250ms var(--cubic-brauser);
+}
+.logo:active,
+.burger-menu:active {
+  color: var(--dark-color);
+}
+@media (hover: hover) {
+  .logo:hover,
+  .burger-menu:hover {
+    color: var(--dark-color);
+  }
+}
