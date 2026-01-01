@@ -1,4 +1,7 @@
 @use './scss/index';
-// @use 'swiper/css';
-// @use 'swiper/css/navigation';
-// @use 'swiper/css/pagination';
+@use "swiper/css/bundle";
+
+.swiper {
+  width: 300px;
+  height: 300px;
+}
