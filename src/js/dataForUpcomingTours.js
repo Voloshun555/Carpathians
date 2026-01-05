@@ -33,10 +33,12 @@ function renderUpcomingToursList(data) {
   return data
     .map(({ id, img, title, text }) => {
       return `
-  <li class="">
-  <img src='${img}'></img>
-  <h3> ${title} </h3>
-  <p>${text}</p>
+  <li class="item_upcoming">
+  <img src='${img}' class="item_img"></img>
+  <div class="content_item_wraper">
+  <h3 class="item_title"> ${title} </h3>
+  <p class="item_text">${text}</p>
+  <button class="item_btn">MORE DETAILS</button></div>
   </li>
   `;
     })
