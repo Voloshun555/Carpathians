@@ -12,3 +12,21 @@
   line-height: normal;
   text-align: center;
 }
+
+.wrapper-btn {
+  display: flex;
+  gap: 40px;
+  margin-top: 24px;
+
+
+  .svg-btn {
+    width: 28px;
+    height: 28px;
+    color: var( --grey-color);
+   &:hover {
+    color: var(--steel-blue);
+   }
+ 
+  }
+}
+

@@ -1,0 +1,16 @@
+.list__gallary {
+  width: 100%;
+  max-width: 375px;
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  margin-top: 28px;
+}
+
+.item__gallary {
+  min-width: 280px;
+  height: 480px;
+  scroll-snap-align: center;
+}
