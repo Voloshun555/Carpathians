@@ -1,9 +1,74 @@
-.bg__image{
-      background-image: image-set(
+.bg__image {
+  background-image: image-set(
     url("../assets/images/questions/bg-mobile.jpg") 1x,
     url("../assets/images/questions/bg-mobile@2x.jpg") 2x
   );
   background-size: 375px 632px;
   background-repeat: no-repeat;
   background-position: top center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 632px;
+}
+.wrapper_questions {
+  background-color: var(--secondary-color);
+  width: 311px;
+  height: 399px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .title-questions {
+    margin-top: 28px;
+    width: 159px;
+    color: var(--dark-color);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .text-questions {
+    margin-top: 20px;
+    width: 243px;
+    color: var(--dark-color);
+    text-align: center;
+    font-size: var(--fs-7);
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .form__questions {
+    margin-top: 24px;
+    width: 271px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    input {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid var(--grey-color);
+      background-color: var(--secondary-color);
+      outline: none;
+    }
+    .btn__sumbit--questions {
+      margin-top: 8px;
+    }
+    .btn__sumbit--questions {
+      width: 100%;
+      padding: 16px 0;
+      background: var(--steel-blue);
+
+      color: var(--secondary-color);
+      font-size: var(--fs-6);
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
 }
