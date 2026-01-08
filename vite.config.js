@@ -4,7 +4,7 @@ import { resolve } from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/Carpathians/', // для GitHub Pages
+  base: '/Carpathians', // для GitHub Pages
   plugins: [
     handlebars({
       partialDirectory: resolve(__dirname, 'partials'),

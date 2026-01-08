@@ -1,0 +1,9 @@
+.bg__image{
+      background-image: image-set(
+    url("../assets/images/questions/bg-mobile.jpg") 1x,
+    url("../assets/images/questions/bg-mobile@2x.jpg") 2x
+  );
+  background-size: 375px 632px;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
