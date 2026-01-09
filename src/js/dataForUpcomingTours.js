@@ -1,9 +1,8 @@
-import bukovelMobile from "../assets/images/Upcoming-tours/bukovelMobile.jpg";
-// import bukovelMobile2x from "./assets/images/Upcoming-tours/bukovelMobile@2x.jpg";
-// import carpathionsMobile2x from "./assets/images/Upcoming-tours/carpathionsMobile2x";
-import carpathionsMobile from "../assets/images/Upcoming-tours/carpathionsMobile.jpg";
-import hoverlaMobile from "../assets/images/Upcoming-tours/hoverlaMobile.jpg";
-// import hoverlaMobile2x from "./assets/images/Upcoming-tours/hoverlaMobile2x";
+import bukovelMobile from "/images/Upcoming-tours/bukovelMobile.jpg";
+
+import carpathionsMobile from "/images/Upcoming-tours/carpathionsMobile.jpg";
+import hoverlaMobile from "/images/Upcoming-tours/hoverlaMobile.jpg";
+
 
 export const data = [
   {
