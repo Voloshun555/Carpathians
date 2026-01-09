@@ -6,12 +6,27 @@
       within 10 minutes
     </p>
     <form class="form__questions">
-      <!-- <label for="user-name">Name</label> -->
-      <input id="user-name" type="name" class="input__questions--name" />
-      <!-- <label for="user-phone">Phone</label> -->
-      <input id="user-phone" type="phone" class="input__questions--phone" />
-      <!-- <label for="user-question">Question</label> -->
-      <input id="user-question" type="text" class="input__questions--text" />
+      <input
+        type="text"
+        name="name"
+        class="input__questions"
+        placeholder="Your name*"
+      />
+
+      <input
+        type="phone"
+        name="phone"
+        class="input__questions"
+        placeholder="Phone number*"
+      />
+
+      <input
+        type="text"
+        name="question"
+        class="input__questions"
+        placeholder="What would you like to know?"
+      />
+
       <button type="submit" class="btn__sumbit--questions">call me</button>
     </form>
   </div>
