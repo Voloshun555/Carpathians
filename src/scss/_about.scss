@@ -14,3 +14,13 @@
 .about__text--secondary {
   margin-top: 5px;
 }
+
+@media (min-width: 767px) {
+  .about__text{
+    margin-top: 40px;
+     width: 728px;
+  }
+  .about__text--secondary {
+  margin-top: 10px;
+}
+}

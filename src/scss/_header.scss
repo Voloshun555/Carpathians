@@ -1,7 +1,6 @@
 .header {
   position: relative;
   z-index: 2;
-  max-width: 375px;
   margin: 0 auto;
   padding: 20px 32px 0;
 }
@@ -27,5 +26,16 @@
   .logo:hover,
   .burger-menu:hover {
     color: var(--dark-color);
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 24px 20px 0;
+  }
+  .logo,
+  .burger-menu {
+    width: 60px;
+    height: 60px;
   }
 }

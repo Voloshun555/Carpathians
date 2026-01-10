@@ -18,15 +18,18 @@
   gap: 40px;
   margin-top: 24px;
 
-
   .svg-btn {
     width: 28px;
     height: 28px;
-    color: var( --grey-color);
-   &:hover {
-    color: var(--steel-blue);
-   }
- 
+    color: var(--grey-color);
+    &:hover {
+      color: var(--steel-blue);
+    }
   }
 }
 
+@media (min-width: 768px) {
+  .container {
+    margin-top: 80px;
+  }
+}
