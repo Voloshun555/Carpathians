@@ -1,5 +1,4 @@
 .list-reviews {
-  width: 311px;
   margin-top: 28px;
   display: flex;
   flex-direction: column;
@@ -11,6 +10,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 311px;
   height: 452px;
 
   .item-person {
@@ -46,12 +46,25 @@
     margin-top: 16px;
     font-size: var(--fs-6);
   }
-  .icon-round{
+  .icon-round {
     position: absolute;
     bottom: 12px;
     right: 12px;
     width: 32px;
     height: 32px;
     color: var(--steel-blue);
+  }
+}
+
+@media (min-width: 768px) {
+  .list-reviews {
+    margin-top: 40px;
+    flex-direction: row;
+    justify-content: center;
+     gap: 20px;
+    .item-reviews {
+      width: 354px;
+      height: 504px;
+    }
   }
 }
