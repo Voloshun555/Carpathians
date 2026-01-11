@@ -61,10 +61,20 @@
     margin-top: 40px;
     flex-direction: row;
     justify-content: center;
-     gap: 20px;
+    gap: 20px;
     .item-reviews {
       width: 354px;
       height: 504px;
+
+      .reviews__content {
+        padding: 0 20px;
+      }
+      .icon-round {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 20px;
+      }
     }
   }
 }

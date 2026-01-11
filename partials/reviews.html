@@ -2,14 +2,25 @@
   <h2 class="section-title">Reviews</h2>
   <ul class="list-reviews">
     <li class="item-reviews">
-      <img
-        src="/images/reviews/Review_mobile.jpg"
-        srcset="
-          /images/reviews/Review_mobile.jpg    1x,
-          /images/reviews/Review_mobile@2x.jpg 2x
-        "
-        alt="landscape"
-      />
+      <picture>
+        <!-- Tablet screens -->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            /images/reviews/Review_tablet.jpg    1x,
+            /images/reviews/Review_tablet@2x.jpg 2x
+          "
+        />
+        <!-- Mobile screens -->
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            /images/reviews/Review_mobile.jpg    1x,
+            /images/reviews/Review_mobile@2x.jpg 2x
+          "
+        />
+        <img src="/images/reviews/Review_mobile.jpg" alt="landscape" />
+      </picture>
       <div class="reviews__content">
         <img
           src="/images/reviews/mariya.png"
@@ -34,14 +45,25 @@
       </div>
     </li>
     <li class="item-reviews">
-      <img
-        src="/images/reviews/Review_mobile.jpg"
-        srcset="
-          /images/reviews/Review_mobile.jpg    1x,
-          /images/reviews/Review_mobile@2x.jpg 2x
-        "
-        alt="landscape"
-      />
+       <picture>
+        <!-- Tablet screens -->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            /images/reviews/Review_tablet.jpg    1x,
+            /images/reviews/Review_tablet@2x.jpg 2x
+          "
+        />
+        <!-- Mobile screens -->
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            /images/reviews/Review_mobile.jpg    1x,
+            /images/reviews/Review_mobile@2x.jpg 2x
+          "
+        />
+        <img src="/images/reviews/Review_mobile.jpg" alt="landscape" />
+      </picture>
       <div class="reviews__content">
         <img
           src="/images/reviews/ostap.png"
