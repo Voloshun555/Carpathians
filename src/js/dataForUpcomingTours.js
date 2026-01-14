@@ -12,6 +12,13 @@ import carpathionsTablet from "/images/Upcoming-tours/carpathiansTablet.jpg";
 import bukovelTablet from "/images/Upcoming-tours/bukovelTablet.jpg";
 import bukovelTablet2x from "/images/Upcoming-tours/bukovelTablet@2x.jpg";
 
+import hoverlaDesk from "/images/Upcoming-tours/hoverlaDesk.jpg";
+import hoverlaDesk2x from "/images/Upcoming-tours/hoverlaDesk@2x.jpg";
+import carpathionsDesk2x from "/images/Upcoming-tours/carpathiansDesk@2x.jpg";
+import carpathionsDesk from "/images/Upcoming-tours/carpathiansDesk.jpg";
+import bukovelDesk from "/images/Upcoming-tours/bukovelDesk.jpg";
+import bukovelDesk2x from "/images/Upcoming-tours/bukovelDesk@2x.jpg";
+
 export const data = [
   {
     id: 1,
@@ -19,6 +26,8 @@ export const data = [
     mobile2x: bukovelMobile2x,
     tablet: bukovelTablet,
     tablet2x: bukovelTablet2x,
+    desk: hoverlaDesk,
+    desk2x: hoverlaDesk2x,
     title: "Ski tour to Bukovel",
     text: "From UAH 7,499/person",
   },
@@ -28,6 +37,8 @@ export const data = [
     mobile2x: carpathionsMobile2x,
     tablet: carpathionsTablet,
     tablet2x: carpathionsTablet2x,
+    desk: carpathionsDesk,
+    desk2x: carpathionsDesk2x,
     title: "Week in Carpathians",
     text: "From UAH 9,999/person",
   },
@@ -37,6 +48,8 @@ export const data = [
     mobile2x: hoverlaMobile2x,
     tablet: hoverlaTablet,
     tablet2x: hoverlaTablet2x,
+    desk: hoverlaDesk,
+    desk2x: hoverlaDesk2x,
     title: "Ascent to Hoverla",
     text: "From UAH 4,499/person",
   },
@@ -47,10 +60,16 @@ document
   .insertAdjacentHTML("beforeend", renderUpcomingToursList(data));
 function renderUpcomingToursList(data) {
   return data
-    .map(({ mobile, mobile2x, tablet, tablet2x, title, text }) => {
-      return `
+    .map(
+      ({ mobile, mobile2x, tablet, tablet2x, desk, desk2x, title, text }) => {
+        return `
         <li class="item_upcoming">
           <picture>
+           <!-- Desktop screens -->
+            <source 
+              media="(min-width: 1440px)" 
+              srcset="${desk} 1x, ${desk2x} 2x"
+            >
             <!-- Tablet screens -->
             <source 
               media="(min-width: 768px)" 
@@ -69,12 +88,13 @@ function renderUpcomingToursList(data) {
             />
           </picture>
           <div class="content_item_wraper">
-            <h3 class="item_title">${title}</h3>
-            <p class="item_text">${text}</p>
+            <h3 class="item_upcoming-title">${title}</h3>
+            <p class="item_upcoming-text">${text}</p>
             <button class="item_btn">MORE DETAILS</button>
           </div>
         </li>
       `;
-    })
+      }
+    )
     .join("");
 }

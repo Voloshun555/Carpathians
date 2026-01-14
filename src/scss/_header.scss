@@ -1,5 +1,4 @@
 .header {
-  position: relative;
   z-index: 2;
   margin: 0 auto;
   padding: 20px 32px 0;
@@ -28,7 +27,7 @@
     color: var(--dark-color);
   }
 }
-.nav__header-list{
+.nav__header-list {
   display: none;
 }
 
@@ -88,5 +87,4 @@
       transform: scaleX(1);
     }
   }
-  
 }
