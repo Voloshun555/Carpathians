@@ -12,7 +12,7 @@
   flex-direction: column;
   justify-content: center;
 
-  height: 632px;
+  min-height: 632px;
 }
 
 .wrapper_questions {
@@ -92,6 +92,7 @@
       url("/images/questions/bg-tablet@2x.jpg") 2x
     );
     background-size: 768px 688px;
+    height: 688px;
   }
 
   .wrapper_questions {
@@ -112,6 +113,43 @@
       .btn__sumbit--questions {
         margin-top: 12px;
         width: 394px;
+      }
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .bg__image {
+    background-image: image-set(
+      url("/images/questions/bg-desk.jpg") 1x,
+      url("/images/questions/bg-desk@2x.jpg") 2x
+    );
+
+    background-size: 1170px 1074px;
+    height: 1074px;
+  }
+
+  .wrapper_questions {
+    width: 774px;
+    height: 583px;
+    .title-questions {
+      font-size: 48px;
+      width: 100%;
+      margin-top: 40px;
+    }
+    .text-questions {
+      margin-top: 24px;
+      width: 502px;
+    }
+    .form__questions {
+      width: 575px;
+      margin-top: 32px;
+      gap: 30px;
+      .input__questions {
+        font-size: 24px;
+      }
+      .btn__sumbit--questions {
+        margin-top: 14px;
+        width: 100%;
       }
     }
   }

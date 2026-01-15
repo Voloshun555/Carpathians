@@ -17,10 +17,20 @@
 @media (min-width: 768px) {
   .list__gallery {
     max-width: 728px;
-     margin-top: 40px;
+    margin-top: 40px;
   }
   .item__gallery {
     min-width: 354px;
     height: 275px;
+  }
+}
+@media (min-width: 1440px) {
+  .list__gallery {
+    max-width: 1170px;
+    margin-top: 60px;
+  }
+  .item__gallery {
+    min-width: 575px;
+    height: 445px;
   }
 }
