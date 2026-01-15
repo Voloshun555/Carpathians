@@ -58,6 +58,7 @@
 }
 
 .modal__hero {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,10 +66,21 @@
   background-color: var(--secondary-color);
   width: 100%;
   max-width: 375px;
-  height: 62dvh;
+  min-height: 62dvh;
   z-index: 1000;
   overflow-y: scroll;
   padding: 52px 32px 36px;
+    
+}
+
+.btn-cross-modal {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+.icon-cross {
+  width: 30px;
+  height: 30px;
 }
 .title-modal-hero {
   font-size: 24px;
