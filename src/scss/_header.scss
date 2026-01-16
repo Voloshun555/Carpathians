@@ -11,24 +11,68 @@
 }
 
 .logo,
-.burger-menu {
+.burger-menu-btn {
+  position: relative;
   width: 40px;
   height: 40px;
   color: var(--secondary-color);
   transition: color 050ms var(--cubic-brauser);
+  z-index: 1;
 }
-.logo:active,
-.burger-menu:active {
+.logo:hover,
+.burger-menu-btn:hover {
   color: var(--dark-color);
 }
-@media (hover: hover) {
-  .logo:hover,
-  .burger-menu:hover {
-    color: var(--dark-color);
-  }
-}
+
+
 .nav__header-list {
   display: none;
+}
+// modal burger menu////////////
+.backdrop.backdrop-burger-menu {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.burger-menu {
+  background-color: rgba(32, 35, 33, 0.7);
+  width: 233px;
+  height: 100dvh;
+  padding: 132px 0 0 32px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  
+}
+
+.nav__burger__menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.nav__burger__menu-item {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 34px;
+  color: var(--secondary-color);
+}
+
+.burger__menu__social-list{
+  margin-top: 64px;
+  
+  
+}
+
+.burger__menu__social-item{
+  &:not(:last-child) {
+  margin-bottom: 32px; 
+}
+}
+.burger__menu__social-icon {
+  color: var(--secondary-color);
+  width: 40px;
+  height: 40px;
+
+
 }
 
 @media (min-width: 768px) {
@@ -50,7 +94,7 @@
     width: 60px;
     height: 60px;
   }
-  .burger-menu {
+  .burger-menu-btn {
     display: none;
   }
   .nav__header {

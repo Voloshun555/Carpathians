@@ -68,19 +68,20 @@
   max-width: 375px;
   min-height: 62dvh;
   z-index: 1000;
-  overflow-y: scroll;
+  // overflow-y: scroll;
   padding: 52px 32px 36px;
-    
 }
 
 .btn-cross-modal {
   position: absolute;
   top: 12px;
   right: 12px;
+  display: flex;
 }
 .icon-cross {
   width: 30px;
   height: 30px;
+  stroke: var(--main-color);
 }
 .title-modal-hero {
   font-size: 24px;
@@ -89,10 +90,9 @@
 .text-modal-hero {
   width: 281px;
   margin-top: 20px;
-  font-size: 14px;
+  font-size: var(--fs-7);
   font-weight: 400;
   line-height: 1.2;
-  letter-spacing: 0%;
   text-align: center;
 }
 .form-modal-hero {
@@ -127,22 +127,56 @@
 }
 .modal__hero-checkbox-label {
   display: flex;
+  align-items: center;
   gap: 14px;
+  cursor: pointer;
 }
+
+.chekbox-hero {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checkbox-hero__custom {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--main-color);
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.checkbox-hero__icon {
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.chekbox-hero:checked + .checkbox-hero__custom .checkbox-hero__icon {
+  opacity: 1;
+}
+
 .modal__hero-checkbox-text {
-  font-size: 16px;
+  font-size: var(--fs-6);
   font-weight: 400;
-  line-height: 1.25;
 }
+
 .btn-modal-hero {
   background-color: var(--steel-blue);
   color: var(--secondary-color);
   height: 52px;
-
   font-size: 16px;
   font-weight: 500;
 }
-
 @media (min-width: 768px) {
   .hero-wrapper {
     height: 818px;
@@ -175,6 +209,34 @@
     width: 394px;
     height: 56px;
     margin: 60px 0 0;
+  }
+  .modal__hero {
+    max-width: 478px;
+    height: max-content;
+    padding: 60px 42px 40px;
+  }
+  .btn-cross-modal {
+    top: 20px;
+    right: 20px;
+  }
+
+  .title-modal-hero {
+    font-size: var(--fs-3);
+  }
+  .text-modal-hero {
+    width: 374px;
+    margin-top: 24px;
+  }
+  .form-modal-hero {
+    margin-top: 32px;
+    gap: 25px;
+  }
+  .btn-modal-hero {
+    margin-top: 16px;
+  }
+  .icon-cross {
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -222,5 +284,40 @@
     width: 40px;
     height: 40px;
     color: var(--secondary-color);
+  }
+  .modal__hero {
+    max-width: 774px;
+    height: max-content;
+    padding: 116px 100px 60px;
+  }
+  .btn-cross-modal {
+    top: 40px;
+    right: 40px;
+  }
+
+  .title-modal-hero {
+    font-size: var(--fs-3);
+  }
+  .text-modal-hero {
+    width: 100%;
+    max-width: 525px;
+    margin-top: 28px;
+    font-size: 24px;
+  }
+  .form-modal-hero {
+    margin-top: 32px;
+    gap: 30px;
+  }
+  .input-modal-hero {
+    padding: 4px 8px 8px;
+  }
+  .btn-modal-hero {
+    margin-top: 16px;
+    height: 70px;
+    font-size: 24px;
+  }
+  .icon-cross {
+    width: 40px;
+    height: 40px;
   }
 }

@@ -31,12 +31,11 @@
       ></a>
     </li>
   </ul>
-  <div class="modal__hero-backdrop is-hidden">
+  <div class="backdrop is-hidden">
     <div class="modal__hero">
       <button type="button" class="btn-cross-modal">
         <svg class="icon-cross">
-          <use href="/src/assets/svg/close.svg">
-          </use>
+          <use href="/src/assets/svg/symbol-defs.svg#icon-close"></use>
         </svg>
       </button>
       <h2 class="title-modal-hero">Book a tour</h2>
@@ -46,36 +45,57 @@
       </p>
 
       <form action="" class="form-modal-hero">
-        <input type="text" class="input-modal-hero" placeholder="Your name*" />
         <input
+          name="text"
+          type="text"
+          class="input-modal-hero"
+          placeholder="Your name*"
+          required
+        />
+        <input
+          name="number"
           type="text"
           class="input-modal-hero"
           placeholder="Phone number*"
+          required
         />
         <ul class="modal__hero-checkbox-list">
           <li class="modal__hero-checkbox-item">
             <label class="modal__hero-checkbox-label" for="Hoverla">
-              <input id="Hoverla" type="checkbox" />
+              <input id="Hoverla" type="checkbox" class="chekbox-hero" />
+              <span class="checkbox-hero__custom">
+                <svg class="checkbox-hero__icon">
+                  <use href="/src/assets/svg/checkmark.svg"></use>
+                </svg>
+              </span>
               <span class="modal__hero-checkbox-text">Ascent to Hoverla</span>
             </label>
           </li>
           <li class="modal__hero-checkbox-item">
             <label class="modal__hero-checkbox-label" for="Bukovel">
-              <input id="Bukovel" type="checkbox" />
+              <input id="Bukovel" type="checkbox" class="chekbox-hero" />
+              <span class="checkbox-hero__custom">
+                <svg class="checkbox-hero__icon">
+                  <use href="/src/assets/svg/checkmark.svg"></use>
+                </svg>
+              </span>
               <span class="modal__hero-checkbox-text">Ski tour to Bukovel</span>
             </label>
           </li>
           <li class="modal__hero-checkbox-item">
             <label class="modal__hero-checkbox-label" for="Carpathians">
-              <input id="Carpathians" type="checkbox" />
+              <input id="Carpathians" type="checkbox" class="chekbox-hero" />
+              <span class="checkbox-hero__custom">
+                <svg class="checkbox-hero__icon">
+                  <use href="/src/assets/svg/checkmark.svg"></use>
+                </svg>
+              </span>
               <span class="modal__hero-checkbox-text">Week in Carpathians</span>
             </label>
           </li>
         </ul>
 
-        <button type="submit" class="btn-modal-hero">
-          CALL ME
-        </button>
+        <button type="submit" class="btn-modal-hero">CALL ME</button>
       </form>
     </div>
   </div>

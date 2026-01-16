@@ -1,5 +1,5 @@
 const openModalHeroBtn = document.querySelector(".btn-hero");
-const modalHero = document.querySelector(".modal__hero-backdrop");
+const modalHero = document.querySelector(".backdrop");
 const closeModalHero = document.querySelector(".btn-cross-modal");
 const body = document.body;
 
