@@ -24,11 +24,9 @@
   color: var(--dark-color);
 }
 
-
 .nav__header-list {
   display: none;
 }
-// modal burger menu////////////
 .backdrop.backdrop-burger-menu {
   display: flex;
   align-items: flex-start;
@@ -40,8 +38,6 @@
   height: 100dvh;
   padding: 132px 0 0 32px;
   overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  
 }
 
 .nav__burger__menu-list {
@@ -56,23 +52,19 @@
   color: var(--secondary-color);
 }
 
-.burger__menu__social-list{
+.burger__menu__social-list {
   margin-top: 64px;
-  
-  
 }
 
-.burger__menu__social-item{
+.burger__menu__social-item {
   &:not(:last-child) {
-  margin-bottom: 32px; 
-}
+    margin-bottom: 32px;
+  }
 }
 .burger__menu__social-icon {
   color: var(--secondary-color);
   width: 40px;
   height: 40px;
-
-
 }
 
 @media (min-width: 768px) {
@@ -80,7 +72,7 @@
     padding: 24px 20px 0;
   }
   .logo,
-  .burger-menu {
+  .burger-menu-btn {
     width: 60px;
     height: 60px;
   }
