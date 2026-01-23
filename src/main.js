@@ -1,4 +1,5 @@
-import './js/swiper';
+import './js/swiper'
 import './js/dataForUpcomingTours'
 import  './js/renderUpcomingTours'
 import './js/toggleModal'
+import './js/slider'

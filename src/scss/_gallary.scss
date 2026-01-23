@@ -7,6 +7,11 @@
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
   margin-top: 28px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.list__gallery::-webkit-scrollbar {
+  display: none;
 }
 
 .item__gallery {
@@ -33,4 +38,8 @@
     min-width: 575px;
     height: 445px;
   }
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }

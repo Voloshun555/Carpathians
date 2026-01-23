@@ -4,8 +4,10 @@ const closeModalHeroBtn = document.querySelector(".btn-cross-modal");
 
 const toggleBurgerBtn = document.querySelector(".burger-btn");
 const burgerMenu = document.querySelector("#burger-menu");
+const burgerMenuItem = document.querySelector(".burger-menu");
 const iconOpenBurgerMenu = document.querySelector(".burger-icon--open");
 const iconCloseBurgerMenu = document.querySelector(".burger-icon--close");
+const visibleHero = document.querySelector(".wraper-hero");
 
 const body = document.body;
 
@@ -25,10 +27,14 @@ function toggleModal(modal) {
     body.classList.add("modal-open");
     iconOpenBurgerMenu.classList.add("changeIcon");
     iconCloseBurgerMenu.classList.remove("changeIcon");
+    visibleHero.classList.add("is-hidden");
+    burgerMenuItem.classList.add("isOpen");
   } else {
     body.classList.remove("modal-open");
     iconOpenBurgerMenu.classList.remove("changeIcon");
     iconCloseBurgerMenu.classList.add("changeIcon");
+    visibleHero.classList.remove("is-hidden");
+    burgerMenuItem.classList.remove("isOpen");
   }
 }
 openModalHeroBtn.addEventListener("click", () => openModal(modalHero));
@@ -48,10 +54,11 @@ window.addEventListener("keydown", (event) => {
   }
 });
 
-window.matchMedia("(max-width: 768px)").addEventListener("change", () => {
+window.matchMedia("(max-width: 1439px)").addEventListener("change", () => {
   burgerMenu.classList.add("is-hidden");
   body.classList.remove("modal-open");
 
   iconOpenBurgerMenu?.classList.remove("changeIcon");
   iconCloseBurgerMenu?.classList.add("changeIcon");
+  visibleHero.classList.remove("is-hidden");
 });

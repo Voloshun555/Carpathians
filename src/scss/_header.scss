@@ -44,6 +44,14 @@
   height: 100dvh;
   padding: 132px 0 0 32px;
   overflow-y: auto;
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.isOpen {
+   transform: scaleX(1);
 }
 
 .nav__burger__menu-list {
@@ -65,8 +73,6 @@
   gap: 32px;
 }
 
-.burger__menu__social-item {
-}
 .burger__menu__social-icon {
   color: var(--secondary-color);
   width: 40px;
@@ -81,6 +87,15 @@
   .burger-menu-btn {
     width: 60px;
     height: 60px;
+  }
+  .burger-menu {
+    width: 374px;
+    padding: 184px 0 0 82px;
+  }
+
+  .burger__menu__social-list {
+    flex-direction: row;
+    margin-top: 80px;
   }
 }
 
