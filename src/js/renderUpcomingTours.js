@@ -1,20 +1,19 @@
-import {data} from './dataForUpcomingTours'
-
+import { data } from "./dataForUpcomingTours";
 
 document
   .querySelector(".list-upcoming")
   .insertAdjacentHTML("beforeend", renderUpcomingToursList(data));
 function renderUpcomingToursList(data) {
   return data
-    .map(
-      ({ mobile, mobile2x, tablet, tablet2x, desk, desk2x, title, text }) => {
-        return `
+    .map(({ title, price, images}) => {
+      const { mobile, mobile2x, tablet, tablet2x, desktop, desktop2x } = images;
+      return `
         <li class="item_upcoming">
           <picture>
            <!-- Desktop screens -->
             <source 
               media="(min-width: 1440px)" 
-              srcset="${desk} 1x, ${desk2x} 2x"
+              srcset="${desktop} 1x, ${desktop2x} 2x"
             >
             <!-- Tablet screens -->
             <source 
@@ -35,12 +34,13 @@ function renderUpcomingToursList(data) {
           </picture>
           <div class="content_item_wraper">
             <h3 class="item_upcoming-title">${title}</h3>
-            <p class="item_upcoming-text">${text}</p>
+            <p class="item_upcoming-text">${price}</p>
             <button class="item_btn">MORE DETAILS</button>
           </div>
         </li>
       `;
-      }
-    )
+    })
     .join("");
 }
+
+
