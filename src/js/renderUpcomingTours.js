@@ -5,7 +5,7 @@ document
   .insertAdjacentHTML("beforeend", renderUpcomingToursList(data));
 function renderUpcomingToursList(data) {
   return data
-    .map(({ title, price, images}) => {
+    .map(({ title, price, images }) => {
       const { mobile, mobile2x, tablet, tablet2x, desktop, desktop2x } = images;
       return `
         <li class="item_upcoming">
@@ -35,12 +35,10 @@ function renderUpcomingToursList(data) {
           <div class="content_item_wraper">
             <h3 class="item_upcoming-title">${title}</h3>
             <p class="item_upcoming-text">${price}</p>
-            <button class="item_btn">MORE DETAILS</button>
+            <button id="moreDetails" class="item_btn">MORE DETAILS</button>
           </div>
         </li>
       `;
     })
     .join("");
 }
-
-

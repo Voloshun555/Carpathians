@@ -9,6 +9,11 @@ const iconOpenBurgerMenu = document.querySelector(".burger-icon--open");
 const iconCloseBurgerMenu = document.querySelector(".burger-icon--close");
 const visibleHero = document.querySelector(".wraper-hero");
 
+const navBurgerMenu = document.querySelector(".nav__burger__menu");
+
+const btnMoreDatails = document.querySelector("#moreDetails");
+const modalUpcomingTours = document / querySelector("#modal-upcoming-tours");
+
 const body = document.body;
 
 function openModal(modal) {
@@ -37,10 +42,22 @@ function toggleModal(modal) {
     burgerMenuItem.classList.remove("isOpen");
   }
 }
+
+btnMoreDatails.addEventListener("click", () => openModal(modalUpcomingTours));
+
 openModalHeroBtn.addEventListener("click", () => openModal(modalHero));
 closeModalHeroBtn.addEventListener("click", () => closeModal(modalHero));
 
 toggleBurgerBtn.addEventListener("click", () => toggleModal(burgerMenu));
+
+navBurgerMenu.addEventListener("click", () => {
+  burgerMenu.classList.add("is-hidden");
+  body.classList.remove("modal-open");
+  iconOpenBurgerMenu.classList.remove("changeIcon");
+  iconCloseBurgerMenu.classList.add("changeIcon");
+  visibleHero.classList.remove("is-hidden");
+  burgerMenuItem.classList.remove("isOpen");
+});
 
 modalHero.addEventListener("click", (event) => {
   if (event.target === modalHero) {

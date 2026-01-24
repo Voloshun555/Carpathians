@@ -61,8 +61,8 @@ export const data = [
       mobile2x: bukovelMobile2x,
       tablet: bukovelTablet,
       tablet2x: bukovelTablet2x,
-      desk: bukovelDesk,
-      desk2x: bukovelDesk2x,
+      desktop: bukovelDesk,
+      desktop2x: bukovelDesk2x,
     },
     days: [
       {
@@ -140,8 +140,8 @@ export const data = [
       mobile2x: carpathionsMobile2x,
       tablet: carpathionsTablet,
       tablet2x: carpathionsTablet2x,
-      desk: carpathionsDesk,
-      desk2x: carpathionsDesk2x,
+      desktop: carpathionsDesk,
+      desktop2x: carpathionsDesk2x,
     },
     days: [
       {
@@ -255,8 +255,8 @@ export const data = [
       mobile2x: hoverlaMobile2x,
       tablet: hoverlaTablet,
       tablet2x: hoverlaTablet2x,
-      desk: hoverlaDesk,
-      desk2x: hoverlaDesk2x,
+      desktop: hoverlaDesk,
+      desktop2x: hoverlaDesk2x,
     },
 
     days: [
