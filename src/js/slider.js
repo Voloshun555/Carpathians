@@ -1,6 +1,4 @@
-
 function initSlider(list, nextBtn, prevBtn, items, gap = 20) {
-  
   function getItemWidth() {
     if (items.length === 0) return 0;
     return items[0].getBoundingClientRect().width + gap;
@@ -29,21 +27,20 @@ function initSlider(list, nextBtn, prevBtn, items, gap = 20) {
   });
 
   list.addEventListener("scroll", updateButtons);
-  
+
   updateButtons();
 }
-
 
 initSlider(
   document.querySelector(".list__gallery"),
   document.querySelector("#nextGallery"),
   document.querySelector("#prevGallery"),
-  document.querySelectorAll(".item__gallery")
+  document.querySelectorAll(".item__gallery"),
 );
 
 initSlider(
   document.querySelector(".list-upcoming"),
   document.querySelector("#nextUpcoming"),
   document.querySelector("#prevUpcoming"),
-  document.querySelectorAll(".item_upcoming")
+  document.querySelectorAll(".item_upcoming"),
 );

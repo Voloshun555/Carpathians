@@ -35,7 +35,7 @@ function renderUpcomingToursList(data) {
           <div class="content_item_wraper">
             <h3 class="item_upcoming-title">${title}</h3>
             <p class="item_upcoming-text">${price}</p>
-            <button id="moreDetails" class="item_btn">MORE DETAILS</button>
+            <button class="item_btn">MORE DETAILS</button>
           </div>
         </li>
       `;

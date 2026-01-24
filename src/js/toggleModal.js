@@ -11,8 +11,6 @@ const visibleHero = document.querySelector(".wraper-hero");
 
 const navBurgerMenu = document.querySelector(".nav__burger__menu");
 
-const btnMoreDatails = document.querySelector("#moreDetails");
-const modalUpcomingTours = document / querySelector("#modal-upcoming-tours");
 
 const body = document.body;
 
@@ -43,7 +41,6 @@ function toggleModal(modal) {
   }
 }
 
-btnMoreDatails.addEventListener("click", () => openModal(modalUpcomingTours));
 
 openModalHeroBtn.addEventListener("click", () => openModal(modalHero));
 closeModalHeroBtn.addEventListener("click", () => closeModal(modalHero));
