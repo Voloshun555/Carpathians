@@ -7,8 +7,12 @@
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
   margin-top: 28px;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  scroll-behavior: smooth;
+  cursor: grab;
+  user-select: none;
+  &:active {
+  cursor: grabbing;
+}
 }
 .list__gallery::-webkit-scrollbar {
   display: none;
@@ -42,4 +46,10 @@
 button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
+}
+
+
+.item__gallery img {
+  pointer-events: none;
+  -webkit-user-drag: none
 }

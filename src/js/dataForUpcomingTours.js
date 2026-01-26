@@ -53,7 +53,6 @@ import carpathiansMobileModal62x from "/images/Upcoming-tours/modal/carpathiansM
 export const data = [
   {
     id: 1,
-
     title: "Ski tour to Bukovel",
     price: "From UAH 7,499/person",
     images: {
@@ -66,13 +65,13 @@ export const data = [
     },
     days: [
       {
-        duration: "1 day",
         title: "Ski tour to Bukovel",
         image: {
           mobile: bukovelMobileModal,
           mobile2x: bukovelMobileModal2x,
         },
         activities: [
+          "1 day",
           "Departure from Lviv",
           "Manyava Hermitage",
           "Manyava waterfall",
@@ -84,12 +83,13 @@ export const data = [
       },
 
       {
-        duration: "2 day",
+        title: "Ski tour to Bukovel",
         image: {
           mobile: bukovelMobileModal1,
           mobile2x: bukovelMobileModal12x,
         },
         activities: [
+          "2 day",
           "Breakfast",
           "Recreation",
           "Lunch",
@@ -100,12 +100,13 @@ export const data = [
       },
 
       {
-        duration: "3 day",
+        title: "Ski tour to Bukovel",
         image: {
           mobile: bukovelMobileModal2,
           mobile2x: bukovelMobileModal22x,
         },
         activities: [
+          "3 day",
           "Breakfast",
           "A walk around Bukovel",
           "Dinner",
@@ -115,12 +116,13 @@ export const data = [
         ],
       },
       {
-        duration: "4 day",
+        title: "Ski tour to Bukovel",
         image: {
           mobile: bukovelMobileModal3,
           mobile2x: bukovelMobileModal32x,
         },
         activities: [
+          "4 day",
           "Breakfast",
           "Recreation",
           "Dinner",
@@ -132,7 +134,6 @@ export const data = [
   },
   {
     id: 2,
-
     title: "Week in Carpathians",
     price: "From UAH 9,999/person",
     images: {
@@ -145,13 +146,13 @@ export const data = [
     },
     days: [
       {
-        duration: "1 day",
         title: "Week in Carpathians",
         image: {
           mobile: carpathiansMobileModal,
           mobile2x: carpathiansMobileModal2x,
         },
         activities: [
+          "1 day",
           "Departure from Lviv",
           "Manyava Hermitage",
           "Manyava waterfall",
@@ -163,12 +164,13 @@ export const data = [
       },
 
       {
-        duration: "2 day",
+        title: "Week in Carpathians",
         image: {
           mobile: carpathiansMobileModal1,
           mobile2x: carpathiansMobileModal12x,
         },
         activities: [
+          "2 day",
           "Breakfast",
           "Lake Synevyr",
           "Ecopark “Valley of Wolves”",
@@ -179,12 +181,13 @@ export const data = [
       },
 
       {
-        duration: "3 day",
+        title: "Week in Carpathians",
         image: {
           mobile: carpathiansMobileModal2,
           mobile2x: carpathiansMobileModal22x,
         },
         activities: [
+          "3 day",
           "Breakfast",
           "Shipit waterfall",
           "Gimba mountain",
@@ -194,12 +197,13 @@ export const data = [
         ],
       },
       {
-        duration: "4 day",
+        title: "Week in Carpathians",
         image: {
           mobile: carpathiansMobileModal3,
           mobile2x: carpathiansMobileModal32x,
         },
         activities: [
+          "4 day",
           "Breakfast",
           "Deer farm in Iza",
           "Warm waters in Velyatino",
@@ -208,20 +212,27 @@ export const data = [
         ],
       },
       {
-        duration: "5 day",
+        title: "Week in Carpathians",
         image: {
           mobile: carpathiansMobileModal4,
           mobile2x: carpathiansMobileModa42x,
         },
-        activities: ["Breakfast", "Ascent to Hoverla", "Reacreation", "Dinner"],
+        activities: [
+          "5 day",
+          "Breakfast",
+          "Ascent to Hoverla",
+          "Reacreation",
+          "Dinner",
+        ],
       },
       {
-        duration: "6 day",
+        title: "Week in Carpathians",
         image: {
           mobile: carpathiansMobileModal5,
           mobile2x: carpathiansMobileModal52x,
         },
         activities: [
+          "6 day",
           "Breakfast",
           "Hut-museum from the Shadows of Forgotten Ancestors",
           "Lunch",
@@ -230,12 +241,13 @@ export const data = [
         ],
       },
       {
-        duration: "7 day",
+        title: "Week in Carpathians",
         image: {
           mobile: carpathiansMobileModal6,
           mobile2x: carpathiansMobileModal62x,
         },
         activities: [
+          "7 day",
           "Breakfast",
           "Dovbush trail",
           "Souvenir fair",
@@ -261,13 +273,13 @@ export const data = [
 
     days: [
       {
-        duration: "1 day",
         title: "Ascent to Hoverla",
         image: {
           mobile: hoverlaMobileModal,
           mobile2x: hoverlaMobileModal2x,
         },
         activities: [
+          "1 day",
           "Departure from Lviv",
           "Manyava Hermitage",
           "Manyava waterfall",
@@ -279,12 +291,14 @@ export const data = [
       },
 
       {
-        duration: "2 day",
+        title: "Ascent to Hoverla",
+
         image: {
           mobile: hoverlaMobileModal1,
           mobile2x: hoverlaMobileModal12x,
         },
         activities: [
+          "2 day",
           "Breakfast",
           "Ascent to Hoverla",
           "Dinner",
@@ -295,12 +309,13 @@ export const data = [
       },
 
       {
-        duration: "3 day",
+        title: "Ascent to Hoverla",
         image: {
           mobile: hoverlaMobileModal2,
           mobile2x: hoverlaMobileModal22x,
         },
         activities: [
+          "3 day",
           "Breakfast",
           "A walk around Bukovel",
           "Check out from the hotel",

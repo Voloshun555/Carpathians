@@ -48,11 +48,126 @@
     background-color: var(--dark-color);
   }
 }
+.backdropBlur {
+  backdrop-filter: blur(2px);
+}
 
 .modal__upcoming__tours-list {
-  width: 315px;
-  height: 624px;
-  background-color: black;
+  width: 100%;
+  max-width: 315px;
+  display: flex;
+  gap: 20px;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  user-select: none;
+  cursor: grab;
+  &:active {
+    cursor: grabbing;
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.modal__upcoming__tours-item {
+  min-width: 100%;
+  scroll-snap-align: center;
+}
+
+.wraper__tour-item {
+  background-repeat: no-repeat;
+  background-size: 315px 480px;
+  background-position: center;
+  flex-shrink: 0;
+  height: 480px;
+  padding: 56px 0 0 48px;
+}
+.title-modal-tours {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--secondary-color);
+  margin-bottom: 12px;
+}
+.activities__tours {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.activities__tours-item {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: var(--secondary-color);
+  &:first-child {
+    position: relative;
+    border-radius: 0px 8px 8px 0px;
+    background: var(--steel-blue);
+    width: 252px;
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -48px;
+      width: 48px;
+      height: 48px;
+      background-color: var(--steel-blue);
+    }
+  }
+}
+
+.modal-pagination-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.pagination-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.pagination-dot.active {
+  background-color: var(--steel-blue);
+  transform: scale(1.5);
+}
+
+.wrapper-dateils {
+  background-color: var(--secondary-color);
+  padding: 28px 15px;
+}
+.tours-price-modal {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+  text-align: center;
+  color: var(--dark-color);
+}
+
+.btn-dateils-modal {
+  margin-top: 16px;
+  width: 285px;
+  height: 52px;
+  background-color: var(--steel-blue);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: var(--secondary-color);
 }
 
 @media (min-width: 768px) {
