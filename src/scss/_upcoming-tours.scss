@@ -119,16 +119,22 @@
     }
   }
 }
-
+.wrapper-modal-tours {
+  position: relative;
+}
 .modal-pagination-container {
+  position: absolute;
   display: flex;
   justify-content: center;
   gap: 12px;
+  bottom: 164px;
+  left: 152px;
+  transform: translate(-50%);
 }
 
 .pagination-dot {
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   background-color: var(--secondary-color);
   transition: all 0.3s ease;
@@ -162,7 +168,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 10px;
 
   font-size: 16px;
   font-weight: 500;
@@ -188,6 +193,51 @@
   .item_btn {
     margin-top: 40px;
   }
+  .modal__upcoming__tours-list {
+    max-width: 728px;
+  }
+  .wraper__tour-item {
+    padding: 60px 0 0 60px;
+    height: 550px;
+  }
+  .title-modal-tours {
+    font-size: 24px;
+  }
+  .activities__tours {
+    gap: 16px;
+  }
+  .activities__tours-item {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  .wrapper-dateils {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 40px 15px;
+  }
+  .btn-dateils-modal {
+    width: 394px;
+    height: 56px;
+
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .tours-price-modal {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  .modal-pagination-container {
+    left: 356px;
+    bottom: 204px;
+  }
+  .pagination-dot {
+    width: 16px;
+    height: 16px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -206,6 +256,39 @@
   }
   .arrow-icon {
     display: none;
+  }
+
+  .modal__upcoming__tours-list {
+    max-width: 1170px;
+  }
+  .wraper__tour-item {
+    padding: 108px 0 0 100px;
+    height: 742px;
+  }
+  .title-modal-tours {
+    font-size: 40px;
+  }
+
+  .activities__tours-item {
+    font-size: 28px;
+    font-weight: 500;
+  }
+  .wrapper-dateils {
+    padding: 48px 15px;
+  }
+  .btn-dateils-modal {
+    width: 575px;
+    height: 69px;
+
+    font-size: 24px;
+    line-height: 1.2;
+  }
+  .tours-price-modal {
+    font-size: 24px;
+  }
+  .modal-pagination-container {
+    left: 576px;
+    bottom: 277px;
   }
 }
 

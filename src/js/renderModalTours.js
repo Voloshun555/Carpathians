@@ -6,6 +6,7 @@ const allMoreDetailsBtns = document.querySelectorAll(".item_btn");
 const modalUpcomingList = document.querySelector(
   ".modal__upcoming__tours-list",
 );
+const wrapperModalToers = document.querySelector(".wrapper-modal-tours");
 
 function renderModalContent(tour) {
   return tour.days
@@ -33,7 +34,7 @@ function renderModalContent(tour) {
 function renderPagination(count) {
   let dotsHtml = "";
   for (let i = 0; i < count; i++) {
-    dotsHtml += `<li class="pagination-dot ${i === 0 ? "active" : ""}" data-index="${i}"></li>`;
+    dotsHtml += `<li class="pagination-dot ${i === 0 ? "active" : ""}" ></li>`;
   }
   return `<ul class="modal-pagination-container">${dotsHtml}</ul>`;
 }
@@ -46,9 +47,9 @@ allMoreDetailsBtns.forEach((btn) => {
     if (selectedTour) {
       modalUpcomingList.innerHTML = renderModalContent(selectedTour);
       const paginationHtml = renderPagination(selectedTour.days.length);
-      const oldPagination = modalUpcomingTours.querySelector('.modal-pagination-container');
+      const oldPagination = wrapperModalToers.querySelector('.modal-pagination-container');
       if (oldPagination) oldPagination.remove();
-      modalUpcomingTours.insertAdjacentHTML('beforeend', paginationHtml);
+      wrapperModalToers.insertAdjacentHTML('beforeend', paginationHtml);
 
       openModal(modalUpcomingTours);
       initPaginationLogic();
@@ -56,13 +57,13 @@ allMoreDetailsBtns.forEach((btn) => {
   });
 });
 
+
+
 function initPaginationLogic() {
   const dots = document.querySelectorAll(".pagination-dot");
-
   modalUpcomingList.onscroll = () => {
     const width = modalUpcomingList.offsetWidth;
     const index = Math.round(modalUpcomingList.scrollLeft / width);
-
     dots.forEach((dot, i) => {
       if (i === index) {
         dot.classList.add("active");

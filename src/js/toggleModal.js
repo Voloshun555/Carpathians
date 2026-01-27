@@ -44,8 +44,13 @@ function toggleModal(modal) {
 
 openModalHeroBtn.addEventListener("click", () => openModal(modalHero));
 closeModalHeroBtn.addEventListener("click", () => closeModal(modalHero));
-
 toggleBurgerBtn.addEventListener("click", () => toggleModal(burgerMenu));
+
+modalUpcomingTours.addEventListener("click", (e) => {
+  if (e.target.classList.contains("btn-dateils-modal")) {
+    closeModal(modalUpcomingTours);
+  }
+});
 
 navBurgerMenu.addEventListener("click", () => {
   burgerMenu.classList.add("is-hidden");
@@ -56,11 +61,15 @@ navBurgerMenu.addEventListener("click", () => {
   burgerMenuItem.classList.remove("isOpen");
 });
 
-modalHero.addEventListener("click", (event) => {
-  if (event.target === modalHero) {
-    closeModal(modalHero);
-  }
-});
+function closeModalBeckdrop(selector) {
+  selector.addEventListener("click", (event) => {
+    if (event.target === selector) {
+      closeModal(selector);
+    }
+  });
+}
+closeModalBeckdrop(modalHero);
+closeModalBeckdrop(modalUpcomingTours);
 
 window.addEventListener("keydown", (event) => {
   if (event.code === "Escape") {
