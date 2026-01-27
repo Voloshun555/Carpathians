@@ -50,6 +50,68 @@ import carpathiansMobileModal52x from "/images/Upcoming-tours/modal/carpathiansM
 import carpathiansMobileModal6 from "/images/Upcoming-tours/modal/carpathiansMobile6.jpg";
 import carpathiansMobileModal62x from "/images/Upcoming-tours/modal/carpathiansMobile6@2x.jpg";
 
+import hoverlaTabletModal from "/images/Upcoming-tours/modal/hoverlaTablet.jpg";
+import hoverlaTabletModal2x from "/images/Upcoming-tours/modal/hoverlaTablet@2x.jpg";
+import hoverlaTabletModal1 from "/images/Upcoming-tours/modal/hoverlaTablet1.jpg";
+import hoverlaTabletModal12x from "/images/Upcoming-tours/modal/hoverlaTablet1@2x.jpg";
+import hoverlaTabletModal2 from "/images/Upcoming-tours/modal/hoverlaTablet2.jpg";
+import hoverlaTabletModal22x from "/images/Upcoming-tours/modal/hoverlaTablet2@2x.jpg";
+
+import bukovelTabletModal from "/images/Upcoming-tours/modal/bukovelTablet.jpg";
+import bukovelTabletModal2x from "/images/Upcoming-tours/modal/bukovelTablet@2x.jpg";
+import bukovelTabletModal1 from "/images/Upcoming-tours/modal/bukovelTablet1.jpg";
+import bukovelTabletModal12x from "/images/Upcoming-tours/modal/bukovelTablet1@2x.jpg";
+import bukovelTabletModal2 from "/images/Upcoming-tours/modal/bukovelTablet2.jpg";
+import bukovelTabletModal22x from "/images/Upcoming-tours/modal/bukovelTablet2@2x.jpg";
+import bukovelTabletModal3 from "/images/Upcoming-tours/modal/bukovelTablet3.jpg";
+import bukovelTabletModal32x from "/images/Upcoming-tours/modal/bukovelTablet3@2x.jpg";
+
+import carpathiansTabletModal from "/images/Upcoming-tours/modal/carpathiansTablet.jpg";
+import carpathiansTabletModal2x from "/images/Upcoming-tours/modal/carpathiansTablet@2x.jpg";
+import carpathiansTabletModal1 from "/images/Upcoming-tours/modal/carpathiansTablet1.jpg";
+import carpathiansTabletModal12x from "/images/Upcoming-tours/modal/carpathiansTablet1@2x.jpg";
+import carpathiansTabletModal2 from "/images/Upcoming-tours/modal/carpathiansTablet2.jpg";
+import carpathiansTabletModal22x from "/images/Upcoming-tours/modal/carpathiansTablet2@2x.jpg";
+import carpathiansTabletModal3 from "/images/Upcoming-tours/modal/carpathiansTablet3.jpg";
+import carpathiansTabletModal32x from "/images/Upcoming-tours/modal/carpathiansTablet3@2x.jpg";
+import carpathiansTabletModal4 from "/images/Upcoming-tours/modal/carpathiansTablet4.jpg";
+import carpathiansTabletModal42x from "/images/Upcoming-tours/modal/carpathiansTablet4@2x.jpg";
+import carpathiansTabletModal5 from "/images/Upcoming-tours/modal/carpathiansTablet5.jpg";
+import carpathiansTabletModal52x from "/images/Upcoming-tours/modal/carpathiansTablet5@2x.jpg";
+import carpathiansTabletModal6 from "/images/Upcoming-tours/modal/carpathiansTablet6.jpg";
+import carpathiansTabletModal62x from "/images/Upcoming-tours/modal/carpathiansTablet6@2x.jpg";
+
+import hoverlaDeskModal from "/images/Upcoming-tours/modal/hoverlaDesk.jpg";
+import hoverlaDeskModal2x from "/images/Upcoming-tours/modal/hoverlaDesk@2x.jpg";
+import hoverlaDeskModal1 from "/images/Upcoming-tours/modal/hoverlaDesk1.jpg";
+import hoverlaDeskModal12x from "/images/Upcoming-tours/modal/hoverlaDesk1@2x.jpg";
+import hoverlaDeskModal2 from "/images/Upcoming-tours/modal/hoverlaDesk2.jpg";
+import hoverlaDeskModal22x from "/images/Upcoming-tours/modal/hoverlaDesk2@2x.jpg";
+
+import bukovelDeskModal from "/images/Upcoming-tours/modal/bukovelDesk.jpg";
+import bukovelDeskModal2x from "/images/Upcoming-tours/modal/bukovelDesk@2x.jpg";
+import bukovelDeskModal1 from "/images/Upcoming-tours/modal/bukovelDesk1.jpg";
+import bukovelDeskModal12x from "/images/Upcoming-tours/modal/bukovelDesk1@2x.jpg";
+import bukovelDeskModal2 from "/images/Upcoming-tours/modal/bukovelDesk2.jpg";
+import bukovelDeskModal22x from "/images/Upcoming-tours/modal/bukovelDesk2@2x.jpg";
+import bukovelDeskModal3 from "/images/Upcoming-tours/modal/bukovelDesk3.jpg";
+import bukovelDeskModal32x from "/images/Upcoming-tours/modal/bukovelDesk3@2x.jpg";
+
+import carpathiansDeskModal from "/images/Upcoming-tours/modal/carpathiansDesk.jpg";
+import carpathiansDeskModal2x from "/images/Upcoming-tours/modal/carpathiansDesk@2x.jpg";
+import carpathiansDeskModal1 from "/images/Upcoming-tours/modal/carpathiansDesk1.jpg";
+import carpathiansDeskModal12x from "/images/Upcoming-tours/modal/carpathiansDesk1@2x.jpg";
+import carpathiansDeskModal2 from "/images/Upcoming-tours/modal/carpathiansDesk2.jpg";
+import carpathiansDeskModal22x from "/images/Upcoming-tours/modal/carpathiansDesk2@2x.jpg";
+import carpathiansDeskModal3 from "/images/Upcoming-tours/modal/carpathiansDesk3.jpg";
+import carpathiansDeskModal32x from "/images/Upcoming-tours/modal/carpathiansDesk3@2x.jpg";
+import carpathiansDeskModal4 from "/images/Upcoming-tours/modal/carpathiansDesk4.jpg";
+import carpathiansDeskModal42x from "/images/Upcoming-tours/modal/carpathiansDesk4@2x.jpg";
+import carpathiansDeskModal5 from "/images/Upcoming-tours/modal/carpathiansDesk5.jpg";
+import carpathiansDeskModal52x from "/images/Upcoming-tours/modal/carpathiansDesk5@2x.jpg";
+import carpathiansDeskModal6 from "/images/Upcoming-tours/modal/carpathiansDesk6.jpg";
+import carpathiansDeskModal62x from "/images/Upcoming-tours/modal/carpathiansDesk6@2x.jpg";
+
 export const data = [
   {
     id: 1,
@@ -69,6 +131,10 @@ export const data = [
         image: {
           mobile: bukovelMobileModal,
           mobile2x: bukovelMobileModal2x,
+          tablet: bukovelTabletModal,
+          tablet2x: bukovelTabletModal2x,
+          desktop: bukovelDeskModal,
+          desktop2x: bukovelDeskModal2x,
         },
         activities: [
           "1 day",
@@ -87,6 +153,10 @@ export const data = [
         image: {
           mobile: bukovelMobileModal1,
           mobile2x: bukovelMobileModal12x,
+          tablet: bukovelTabletModal1,
+          tablet2x: bukovelTabletModal12x,
+          desktop: bukovelDeskModal1,
+          desktop2x: bukovelDeskModal12x,
         },
         activities: [
           "2 day",
@@ -104,6 +174,10 @@ export const data = [
         image: {
           mobile: bukovelMobileModal2,
           mobile2x: bukovelMobileModal22x,
+          tablet: bukovelTabletModal2,
+          tablet2x: bukovelTabletModal22x,
+          desktop: bukovelDeskModal2,
+          desktop2x: bukovelDeskModal22x,
         },
         activities: [
           "3 day",
@@ -120,6 +194,10 @@ export const data = [
         image: {
           mobile: bukovelMobileModal3,
           mobile2x: bukovelMobileModal32x,
+          tablet: bukovelTabletModal3,
+          tablet2x: bukovelTabletModal32x,
+          desktop: bukovelDeskModal3,
+          desktop2x: bukovelDeskModal32x,
         },
         activities: [
           "4 day",
@@ -150,6 +228,10 @@ export const data = [
         image: {
           mobile: carpathiansMobileModal,
           mobile2x: carpathiansMobileModal2x,
+          tablet: carpathiansTabletModal,
+          tablet2x: carpathiansTabletModal2x,
+          desktop: carpathiansDeskModal,
+          desktop2x: carpathiansDeskModal2x,
         },
         activities: [
           "1 day",
@@ -168,6 +250,10 @@ export const data = [
         image: {
           mobile: carpathiansMobileModal1,
           mobile2x: carpathiansMobileModal12x,
+          tablet: carpathiansTabletModal1,
+          tablet2x: carpathiansTabletModal12x,
+          desktop: carpathiansDeskModal1,
+          desktop2x: carpathiansDeskModal12x,
         },
         activities: [
           "2 day",
@@ -185,6 +271,10 @@ export const data = [
         image: {
           mobile: carpathiansMobileModal2,
           mobile2x: carpathiansMobileModal22x,
+          tablet: carpathiansTabletModal2,
+          tablet2x: carpathiansTabletModal22x,
+          desktop: carpathiansDeskModal2,
+          desktop2x: carpathiansDeskModal22x,
         },
         activities: [
           "3 day",
@@ -201,6 +291,10 @@ export const data = [
         image: {
           mobile: carpathiansMobileModal3,
           mobile2x: carpathiansMobileModal32x,
+          tablet: carpathiansTabletModal3,
+          tablet2x: carpathiansTabletModal32x,
+          desktop: carpathiansDeskModal3,
+          desktop2x: carpathiansDeskModal32x,
         },
         activities: [
           "4 day",
@@ -216,6 +310,10 @@ export const data = [
         image: {
           mobile: carpathiansMobileModal4,
           mobile2x: carpathiansMobileModa42x,
+          tablet: carpathiansTabletModal4,
+          tablet2x: carpathiansTabletModal42x,
+          desktop: carpathiansDeskModal4,
+          desktop2x: carpathiansDeskModal42x,
         },
         activities: [
           "5 day",
@@ -230,6 +328,10 @@ export const data = [
         image: {
           mobile: carpathiansMobileModal5,
           mobile2x: carpathiansMobileModal52x,
+          tablet: carpathiansTabletModal5,
+          tablet2x: carpathiansTabletModal52x,
+          desktop: carpathiansDeskModal5,
+          desktop2x: carpathiansDeskModal52x,
         },
         activities: [
           "6 day",
@@ -245,6 +347,10 @@ export const data = [
         image: {
           mobile: carpathiansMobileModal6,
           mobile2x: carpathiansMobileModal62x,
+          tablet: carpathiansTabletModal6,
+          tablet2x: carpathiansTabletModal62x,
+          desktop: carpathiansDeskModal6,
+          desktop2x: carpathiansDeskModal62x,
         },
         activities: [
           "7 day",
@@ -277,6 +383,10 @@ export const data = [
         image: {
           mobile: hoverlaMobileModal,
           mobile2x: hoverlaMobileModal2x,
+          tablet: hoverlaTabletModal,
+          tablet2x: hoverlaTabletModal2x,
+          desktop: hoverlaDeskModal,
+          desktop2x: hoverlaDeskModal2x,
         },
         activities: [
           "1 day",
@@ -296,6 +406,10 @@ export const data = [
         image: {
           mobile: hoverlaMobileModal1,
           mobile2x: hoverlaMobileModal12x,
+          tablet: hoverlaTabletModal1,
+          tablet2x: hoverlaTabletModal12x,
+          desktop: hoverlaDeskModal1,
+          desktop2x: hoverlaDeskModal12x,
         },
         activities: [
           "2 day",
@@ -313,6 +427,10 @@ export const data = [
         image: {
           mobile: hoverlaMobileModal2,
           mobile2x: hoverlaMobileModal22x,
+          tablet: hoverlaTabletModal2,
+          tablet2x: hoverlaTabletModal22x,
+          desktop: hoverlaDeskModal2,
+          desktop2x: hoverlaDeskModal22x,
         },
         activities: [
           "3 day",

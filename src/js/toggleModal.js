@@ -49,6 +49,7 @@ toggleBurgerBtn.addEventListener("click", () => toggleModal(burgerMenu));
 modalUpcomingTours.addEventListener("click", (e) => {
   if (e.target.classList.contains("btn-dateils-modal")) {
     closeModal(modalUpcomingTours);
+    openModal(modalHero)
   }
 });
 

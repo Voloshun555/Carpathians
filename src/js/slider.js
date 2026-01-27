@@ -38,40 +38,39 @@ function enableDragScroll(selector) {
   let startX;
   let scrollLeft;
 
-  slider.addEventListener('mousedown', (e) => {
+  slider.addEventListener("mousedown", (e) => {
     isDown = true;
-    slider.classList.add('active');
+    slider.classList.add("active");
     startX = e.pageX - slider.offsetLeft;
     scrollLeft = slider.scrollLeft;
-    slider.style.scrollBehavior = 'auto';
-    slider.style.scrollSnapType = 'none';
+    slider.style.scrollBehavior = "auto";
+    slider.style.scrollSnapType = "none";
   });
 
-  slider.addEventListener('mouseleave', () => {
+  slider.addEventListener("mouseleave", () => {
     isDown = false;
-    slider.style.scrollSnapType = 'x mandatory';
+    slider.style.scrollSnapType = "x mandatory";
   });
 
-  slider.addEventListener('mouseup', () => {
+  slider.addEventListener("mouseup", () => {
     isDown = false;
-    slider.style.scrollSnapType = 'x mandatory';
-    slider.style.scrollBehavior = 'smooth';
+    slider.style.scrollSnapType = "x mandatory";
+    slider.style.scrollBehavior = "smooth";
   });
 
-  slider.addEventListener('mousemove', (e) => {
+  slider.addEventListener("mousemove", (e) => {
     if (!isDown) return;
     e.preventDefault();
-    
+
     const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * 1.5; 
+    const walk = (x - startX) * 1.5;
     slider.scrollLeft = scrollLeft - walk;
   });
 }
 
-enableDragScroll('.list-upcoming');
-enableDragScroll('.modal__upcoming__tours-list');
-enableDragScroll('.list__gallery');
-
+enableDragScroll(".list-upcoming");
+enableDragScroll(".modal__upcoming__tours-list");
+enableDragScroll(".list__gallery");
 
 initSlider(
   document.querySelector(".list__gallery"),

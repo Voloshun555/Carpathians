@@ -296,3 +296,36 @@ button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
+.wraper__tour-item {
+  background-size: cover;
+  background-position: center;
+  
+  background-image: var(--img-mob);
+  background-image: image-set(var(--img-mob) 1x, var(--img-mob2x) 2x);
+}
+
+@media (min-width: 768px) {
+  .wraper__tour-item {
+    background-image: var(--img-tab);
+    background-image: image-set(var(--img-tab) 1x, var(--img-tab2x) 2x);
+  }
+}
+
+@media (min-width: 1440px) {
+  .wraper__tour-item {
+    background-image: var(--img-desk);
+    background-image: image-set(var(--img-desk) 1x, var(--img-desk2x) 2x);
+  }
+}
+
+.wraper__tour-item {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Коли стиль додано, картинка плавно з'явиться */
+.wraper__tour-item[style] {
+  opacity: 1;
+}

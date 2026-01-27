@@ -11,20 +11,27 @@ const wrapperModalToers = document.querySelector(".wrapper-modal-tours");
 function renderModalContent(tour) {
   return tour.days
     .map(({ image, activities, title }) => {
+      const { mobile, mobile2x, tablet, tablet2x, desktop, desktop2x } = image;
+      const imageVars = `
+        --img-mob: url('${mobile}'); --img-mob2x: url('${mobile2x}');
+        --img-tab: url('${tablet}'); --img-tab2x: url('${tablet2x}');
+        --img-desk: url('${desktop}'); --img-desk2x: url('${desktop2x}');
+      `;
+
       const activitiesHtml = activities
-        .map((act) => `<li class="activities__tours-item"> ${act}</li>`)
+        .map((act) => `<li class="activities__tours-item">${act}</li>`)
         .join("");
 
       return `
-      <li class="modal__upcoming__tours-item" >
-      <div style="background-image: url('${image.mobile}')" class="wraper__tour-item"  >
-      <h2 class="title-modal-tours">${title}</h2>
-      <ul class="activities__tours">${activitiesHtml}</ul>
-      </div>
+      <li class="modal__upcoming__tours-item">
+        <div data-background="${imageVars}" class="wraper__tour-item lazy-bg">
+          <h2 class="title-modal-tours">${title}</h2>
+          <ul class="activities__tours">${activitiesHtml}</ul>
+        </div>
         <div class="wrapper-dateils">
           <p class="tours-price-modal">UAH 7,499/person</p>
-          <button class="btn-dateils-modal">BOOK A TOUR</button>
-      </div>
+          <button class="btn-dateils-modal" href="#bookATour" >BOOK A TOUR</button>
+        </div>
       </li>
     `;
     })
@@ -46,18 +53,19 @@ allMoreDetailsBtns.forEach((btn) => {
 
     if (selectedTour) {
       modalUpcomingList.innerHTML = renderModalContent(selectedTour);
+      initLazyBackgrounds();
       const paginationHtml = renderPagination(selectedTour.days.length);
-      const oldPagination = wrapperModalToers.querySelector('.modal-pagination-container');
+      const oldPagination = wrapperModalToers.querySelector(
+        ".modal-pagination-container",
+      );
       if (oldPagination) oldPagination.remove();
-      wrapperModalToers.insertAdjacentHTML('beforeend', paginationHtml);
+      wrapperModalToers.insertAdjacentHTML("beforeend", paginationHtml);
 
       openModal(modalUpcomingTours);
       initPaginationLogic();
     }
   });
 });
-
-
 
 function initPaginationLogic() {
   const dots = document.querySelectorAll(".pagination-dot");
@@ -83,4 +91,21 @@ function initPaginationLogic() {
       });
     };
   });
+}
+
+function initLazyBackgrounds() {
+  const lazyBlocks = document.querySelectorAll(".lazy-bg");
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const block = entry.target;
+        block.setAttribute("style", block.dataset.background);
+        block.classList.remove("lazy-bg");
+        observer.unobserve(block);
+      }
+    });
+  });
+
+  lazyBlocks.forEach((block) => observer.observe(block));
 }
