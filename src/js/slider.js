@@ -63,7 +63,7 @@ function enableDragScroll(selector) {
     e.preventDefault();
 
     const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * 1.5;
+    const walk = (x - startX) * 2.5;
     slider.scrollLeft = scrollLeft - walk;
   });
 }

@@ -137,7 +137,13 @@
   height: 12px;
   border-radius: 50%;
   background-color: var(--secondary-color);
-  transition: all 0.3s ease;
+  transition:
+    background-color 250ms var(--cubic-brauser),
+    transform 250ms var(--cubic-brauser);
+  &:hover {
+    transform: scale(1.1);
+    background-color: #20c9c9;
+  }
   cursor: pointer;
 }
 
@@ -173,6 +179,11 @@
   font-weight: 500;
   line-height: 1.25;
   color: var(--secondary-color);
+
+   transition: background-color 250ms var(--cubic-brauser);
+  &:hover {
+    background-color: var(--main-color);
+  }
 }
 
 @media (min-width: 768px) {

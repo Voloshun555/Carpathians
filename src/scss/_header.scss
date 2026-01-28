@@ -1,5 +1,4 @@
 .header {
-  z-index: 2;
   margin: 0 auto;
   padding: 20px 32px 0;
 }
@@ -17,16 +16,14 @@
   height: 40px;
   color: var(--secondary-color);
   stroke: var(--secondary-color);
-  transition: color 050ms var(--cubic-brauser);
-  z-index: 1;
+  transition: transform 250ms var(--cubic-brauser);
+  z-index: 5;
 }
 .changeIcon {
   display: none;
 }
-.logo:hover,
-.burger-menu-btn:hover {
-  color: var(--dark-color);
-  stroke: var(--dark-color);
+.logo:hover {
+  transform: scale(1.2);
 }
 
 .nav__header-list {
@@ -51,7 +48,7 @@
 }
 
 .isOpen {
-   transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .nav__burger__menu-list {

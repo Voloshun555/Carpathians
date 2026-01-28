@@ -6,7 +6,7 @@ const allMoreDetailsBtns = document.querySelectorAll(".item_btn");
 const modalUpcomingList = document.querySelector(
   ".modal__upcoming__tours-list",
 );
-const wrapperModalToers = document.querySelector(".wrapper-modal-tours");
+const wrapperModalTours = document.querySelector(".wrapper-modal-tours");
 
 function renderModalContent(tour) {
   return tour.days
@@ -30,7 +30,7 @@ function renderModalContent(tour) {
         </div>
         <div class="wrapper-dateils">
           <p class="tours-price-modal">UAH 7,499/person</p>
-          <button class="btn-dateils-modal" href="#bookATour" >BOOK A TOUR</button>
+          <button class="btn-dateils-modal" type="button">BOOK A TOUR</button>
         </div>
       </li>
     `;
@@ -41,7 +41,7 @@ function renderModalContent(tour) {
 function renderPagination(count) {
   let dotsHtml = "";
   for (let i = 0; i < count; i++) {
-    dotsHtml += `<li class="pagination-dot ${i === 0 ? "active" : ""}" ></li>`;
+    dotsHtml += `<li><button class="pagination-dot ${i === 0 ? "active" : ""}" data-index="${i}"></button></li>`;
   }
   return `<ul class="modal-pagination-container">${dotsHtml}</ul>`;
 }
@@ -54,12 +54,14 @@ allMoreDetailsBtns.forEach((btn) => {
     if (selectedTour) {
       modalUpcomingList.innerHTML = renderModalContent(selectedTour);
       initLazyBackgrounds();
+
       const paginationHtml = renderPagination(selectedTour.days.length);
-      const oldPagination = wrapperModalToers.querySelector(
+      const oldPagination = wrapperModalTours.querySelector(
         ".modal-pagination-container",
       );
       if (oldPagination) oldPagination.remove();
-      wrapperModalToers.insertAdjacentHTML("beforeend", paginationHtml);
+
+      wrapperModalTours.insertAdjacentHTML("beforeend", paginationHtml);
 
       openModal(modalUpcomingTours);
       initPaginationLogic();
@@ -73,30 +75,26 @@ function initPaginationLogic() {
     const width = modalUpcomingList.offsetWidth;
     const index = Math.round(modalUpcomingList.scrollLeft / width);
     dots.forEach((dot, i) => {
-      if (i === index) {
-        dot.classList.add("active");
-      } else {
-        dot.classList.remove("active");
-      }
+      dot.classList.toggle("active", i === index);
     });
   };
 
   dots.forEach((dot) => {
-    dot.onclick = () => {
-      const index = dot.dataset.index;
+    dot.addEventListener("click", () => {
+      const index = Number(dot.dataset.index);
       const width = modalUpcomingList.offsetWidth;
       modalUpcomingList.scrollTo({
         left: width * index,
         behavior: "smooth",
       });
-    };
+    });
   });
 }
 
 function initLazyBackgrounds() {
   const lazyBlocks = document.querySelectorAll(".lazy-bg");
 
-  const observer = new IntersectionObserver((entries, observer) => {
+  const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         const block = entry.target;

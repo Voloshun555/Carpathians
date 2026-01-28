@@ -52,6 +52,13 @@
   font-family: Manrope, sans-serif;
   font-size: var(--fs-6);
   font-weight: 500;
+  transition:
+    background-color 250ms var(--cubic-brauser),
+    transform 250ms var(--cubic-brauser);
+  &:hover {
+    transform: scale(1.1);
+    background-color: var(--main-color);
+  }
 }
 .hero__social-list {
   display: none;
@@ -74,6 +81,10 @@
   top: 12px;
   right: 12px;
   display: flex;
+  transition: transform 250ms var(--cubic-brauser);
+  &:hover {
+    transform: scale(1.2);
+  }
 }
 .icon-cross {
   width: 30px;
@@ -148,7 +159,9 @@
   width: 24px;
   height: 24px;
   border: 1px solid var(--main-color);
-  transition: background-color 0.3s, border-color 0.3s;
+  transition:
+    background-color 0.3s,
+    border-color 0.3s;
 }
 
 .checkbox-hero__icon {
@@ -173,6 +186,10 @@
   height: 52px;
   font-size: 16px;
   font-weight: 500;
+  transition: background-color 250ms var(--cubic-brauser);
+  &:hover {
+    background-color: var(--main-color);
+  }
 }
 @media (min-width: 768px) {
   .hero-wrapper {
@@ -281,6 +298,10 @@
     width: 40px;
     height: 40px;
     color: var(--secondary-color);
+    transition: transform 250ms var(--cubic-brauser);
+    &:hover {
+      transform: scale(1.2);
+    }
   }
   .modal__hero {
     max-width: 774px;
